@@ -1,0 +1,14 @@
+# Ignora o core do WordPress e dados runtime, versiona apenas wp-content (tema/plugins)
+wordpress_data/*
+!wordpress_data/wp-content/
+wordpress_data/wp-content/uploads/
+
+mysql_data/
+
+.env
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+
+# Saídas do inspetor de design (screenshots)
+.taste-skill/
+.claude/

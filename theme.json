@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"layout": { "contentSize": "1200px", "wideSize": "1440px" },
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"custom": false,
+			"customGradient": false,
+			"gradients": [],
+			"palette": [
+				{ "slug": "abyss", "name": "Abismo (azul profundo)", "color": "#0A1F3D" },
+				{ "slug": "deep", "name": "Profundo", "color": "#0B4A5A" },
+				{ "slug": "tide", "name": "Maré (verde-água)", "color": "#0FB5A6" },
+				{ "slug": "shallow", "name": "Raso", "color": "#9BE7DC" },
+				{ "slug": "mist", "name": "Névoa", "color": "#E8EEF2" },
+				{ "slug": "lime", "name": "Limão (destaque)", "color": "#C6F432" },
+				{ "slug": "cyan", "name": "Ciano", "color": "#3DE0FF" },
+				{ "slug": "graphite", "name": "Grafite", "color": "#16191F" },
+				{ "slug": "graphite-2", "name": "Grafite claro", "color": "#22262E" }
+			]
+		},
+		"typography": {
+			"fluid": false,
+			"customFontSize": false,
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Space Grotesk",
+					"fontFamily": "\"Space Grotesk\", \"Inter\", system-ui, sans-serif",
+					"fontFace": [
+						{ "fontFamily": "Space Grotesk", "fontWeight": "300 700", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/space-grotesk.woff2" ] }
+					]
+				},
+				{
+					"slug": "text",
+					"name": "Inter",
+					"fontFamily": "\"Inter\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+					"fontFace": [
+						{ "fontFamily": "Inter", "fontWeight": "100 900", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter.woff2" ] }
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "s", "name": "Pequeno", "size": "0.9375rem" },
+				{ "slug": "m", "name": "Texto", "size": "1.125rem" },
+				{ "slug": "l", "name": "Destaque", "size": "clamp(1.5rem, 2.4vw, 2.375rem)" },
+				{ "slug": "xl", "name": "Título", "size": "clamp(2.5rem, 6.2vw, 6.25rem)" },
+				{ "slug": "xxl", "name": "Cartaz", "size": "clamp(4rem, 13vw, 13.5rem)" }
+			]
+		},
+		"spacing": {
+			"units": [ "px", "rem", "vw", "svh", "%" ],
+			"spacingScale": { "steps": 0 },
+			"spacingSizes": [
+				{ "slug": "s", "name": "P", "size": "clamp(12px, 1.6vw, 20px)" },
+				{ "slug": "m", "name": "M", "size": "clamp(24px, 3vw, 40px)" },
+				{ "slug": "l", "name": "G", "size": "clamp(48px, 7vw, 96px)" },
+				{ "slug": "xl", "name": "GG", "size": "clamp(88px, 12vw, 200px)" }
+			]
+		},
+		"shadow": { "defaultPresets": false }
+	},
+	"styles": {
+		"color": { "background": "var(--wp--preset--color--mist)", "text": "var(--wp--preset--color--graphite)" },
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--text)",
+			"fontSize": "var(--wp--preset--font-size--m)",
+			"lineHeight": "1.55"
+		},
+		"spacing": { "blockGap": "1.25rem", "padding": { "top": "0", "right": "0", "bottom": "0", "left": "0" } },
+		"elements": {
+			"heading": {
+				"typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "700", "lineHeight": "0.98", "letterSpacing": "-0.035em" }
+			},
+			"h1": { "typography": { "fontSize": "var(--wp--preset--font-size--xl)" } },
+			"h2": { "typography": { "fontSize": "var(--wp--preset--font-size--xl)" } },
+			"h3": { "typography": { "fontSize": "var(--wp--preset--font-size--l)", "lineHeight": "1.08", "letterSpacing": "-0.02em" } },
+			"h4": { "typography": { "fontSize": "var(--wp--preset--font-size--m)", "lineHeight": "1.3", "letterSpacing": "0" } },
+			"link": { "color": { "text": "currentColor" }, "typography": { "textDecoration": "underline" } },
+			"button": {
+				"color": { "background": "var(--wp--preset--color--lime)", "text": "var(--wp--preset--color--graphite)" },
+				"border": { "radius": "0", "width": "0" },
+				"typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "600", "fontSize": "var(--wp--preset--font-size--m)", "lineHeight": "1", "letterSpacing": "0" },
+				"spacing": { "padding": { "top": "1.1rem", "right": "1.6rem", "bottom": "1.1rem", "left": "1.6rem" } }
+			}
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Cabeçalho", "area": "header" },
+		{ "name": "footer", "title": "Rodapé", "area": "footer" }
+	],
+	"customTemplates": []
+}
